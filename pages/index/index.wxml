@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="user">
+    <input class='user-input' bindinput="bindNameInput" maxlength='20' placeholder="请输入姓名"></input>
+    <input class="user-input" type="number" bindinput="bindPhoneInput" maxlength='11' placeholder="请输入联系方式"></input>
+  </view>
+  <view class="problems">
+    <scroll-view class='problems-list' wx:for-item="problem" wx:for="{{problems}}">
+        <label class='problem'>{{problem.id}}、{{problem.content}}</label>
+        <radio-group bindchange="bindAnswer">
+            <view class="problem-option" wx:for-item="option" wx:for="{{problem.options}}">
+                <radio value="{{problem.id}}-{{option.code}}"  />{{option.code}}、{{option.content}}
+            </view>
+        </radio-group>    
+    </scroll-view> 
+  </view>
+  <view class='submit-view'>
+  <button class="submit-button" bindtap='onSubmit'>提交答案</button>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+/**index.wxss**/
+
+.user{
+  align-items: center;
+  width: 100%
+}
+.user-input{
+  width: 60%;
+  border:solid;
+  border-width: 1px;
+  margin-top: 20rpx;
+  margin-left:20%;
+  border-color: #f00
+}
+
+
+.problems{
+  height: 100%;
+  width: 100%;
+}
+
+.problems-list{
+  margin-top: 30rpx;
+}
+
+.problem-option{
+  margin-left: 100rpx;
+  margin-top: 20rpx;
+}
+.submit-view{
+  width: 100%;
+  align-items: center
+}
+
+.submit-button{
+  margin-top:50rpx;
+  width: 80%;
+  color: #000;
+  background-color: #f00
+}
